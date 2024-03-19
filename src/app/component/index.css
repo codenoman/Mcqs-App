@@ -1,0 +1,35 @@
+
+
+.success-scr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.success-heading {
+    font-size: xx-large;
+    font-family: "Poppins";
+}
+
+.success-text {
+    font-size: medium;
+    font-family: "Poppins";
+    font-size: large;
+}
+
+.success-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.question{
+    font-weight: bolder;
+}
+.answer{
+    font-weight: bold;
+}

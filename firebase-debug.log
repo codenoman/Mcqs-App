@@ -1,0 +1,55 @@
+[debug] [2024-03-19T06:29:55.023Z] ----------------------------------------------------------------------
+[debug] [2024-03-19T06:29:55.029Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Technezo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-03-19T06:29:55.030Z] CLI Version:   13.5.1
+[debug] [2024-03-19T06:29:55.030Z] Platform:      win32
+[debug] [2024-03-19T06:29:55.030Z] Node Version:  v20.11.0
+[debug] [2024-03-19T06:29:55.030Z] Time:          Tue Mar 19 2024 11:29:55 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-03-19T06:29:55.031Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-19T06:29:55.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-19T06:29:55.166Z] > authorizing via signed-in user (nomanalamty@gmail.com)
+[debug] [2024-03-19T06:29:55.166Z] [iam] checking project nextjs-mcqs for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-19T06:29:55.169Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-mcqs:testIamPermissions [none]
+[debug] [2024-03-19T06:29:55.169Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-mcqs:testIamPermissions x-goog-quota-user=projects/nextjs-mcqs
+[debug] [2024-03-19T06:29:55.170Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-mcqs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-19T06:29:56.781Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-mcqs:testIamPermissions 200
+[debug] [2024-03-19T06:29:56.781Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nextjs-mcqs:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-19T06:29:56.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-mcqs [none]
+[debug] [2024-03-19T06:29:58.687Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-mcqs 200
+[debug] [2024-03-19T06:29:58.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nextjs-mcqs {"projectId":"nextjs-mcqs","projectNumber":"373611183554","displayName":"nextjs-mcqs","name":"projects/nextjs-mcqs","resources":{"hostingSite":"nextjs-mcqs"},"state":"ACTIVE","etag":"1_0180ae45-db70-460a-be05-b38bd248bcac"}
+[debug] [2024-03-19T06:30:04.310Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites pageToken=&pageSize=10
+[debug] [2024-03-19T06:30:05.873Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites 200
+[debug] [2024-03-19T06:30:05.874Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites {"sites":[{"name":"projects/nextjs-mcqs/sites/nextjs-mcqs","defaultUrl":"https://nextjs-mcqs.web.app","appId":"1:373611183554:web:071c7db37e80c0571d6a5b","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-19T06:30:05.876Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:373611183554:web:071c7db37e80c0571d6a5b/config [none]
+[debug] [2024-03-19T06:30:07.046Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:373611183554:web:071c7db37e80c0571d6a5b/config 200
+[debug] [2024-03-19T06:30:07.047Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:373611183554:web:071c7db37e80c0571d6a5b/config {"projectId":"nextjs-mcqs","appId":"1:373611183554:web:071c7db37e80c0571d6a5b","storageBucket":"nextjs-mcqs.appspot.com","apiKey":"AIzaSyCR7pYdE6mrveypVa4_LgdClaH7JgQFfyY","authDomain":"nextjs-mcqs.firebaseapp.com","messagingSenderId":"373611183554","measurementId":"G-12BXQZBMT1"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-19T06:30:18.797Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites/nextjs-mcqs [none]
+[debug] [2024-03-19T06:30:20.056Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites/nextjs-mcqs 200
+[debug] [2024-03-19T06:30:20.057Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/nextjs-mcqs/sites/nextjs-mcqs {"name":"projects/nextjs-mcqs/sites/nextjs-mcqs","defaultUrl":"https://nextjs-mcqs.web.app","appId":"1:373611183554:web:071c7db37e80c0571d6a5b","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'E:\practice-one\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'E:\\practice-one\\.next\\trace'
+}
+
+[debug] [2024-03-19T06:30:34.158Z] Error: ENOENT: no such file or directory, open 'E:\practice-one\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
